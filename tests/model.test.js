@@ -29,4 +29,8 @@ test('L\'istanza di model dovrebbe avere il metodo add', () => {
     expect(model.add).toBeDefined();
   });
 // read dovrebbe ritornare un array
+test('read dovrebbe ritornare un array', () => {
+    const model = new Model('Dario');
+    expect(model.read()).toBeInstanceOf(Array);
+  });
 // add dovrebbe aggiungere un elemento all’array dei dati e ritornare tutta la lista
