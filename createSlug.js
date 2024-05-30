@@ -1,8 +1,16 @@
-// createSlug.js
 function createSlug(title, posts) {
-  title = "Hello World";
-    return title.toLowerCase().split(' ').join('-');
+
+  let slug = title.toLowerCase().split(' ').join('-');
+  
+  
+  let originalSlug = slug;
+  let count = 1;
+  while (posts.includes(slug)) {
+    slug = `${originalSlug}-${count}`;
+    count++;
   }
   
-  module.exports = { createSlug };
-  
+  return slug;
+}
+
+module.exports = { createSlug };
