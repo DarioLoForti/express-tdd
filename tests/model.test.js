@@ -22,7 +22,11 @@ test('L\'istanza di model dovrebbe avere il metodo read', () => {
     expect(model.read).toBeDefined();
   });
 
-  
+
 // L'istanza di model dovrebbe avere il metodo add
+test('L\'istanza di model dovrebbe avere il metodo add', () => {
+    const model = new Model('Dario');
+    expect(model.add).toBeDefined();
+  });
 // read dovrebbe ritornare un array
 // add dovrebbe aggiungere un elemento all’array dei dati e ritornare tutta la lista

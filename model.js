@@ -10,6 +10,11 @@ class Model {
     read() {
       return this.data;
     }
+
+    add(item) {
+        this.data.push(item);
+        return this.data;
+    }
   }
   
   module.exports = Model;
