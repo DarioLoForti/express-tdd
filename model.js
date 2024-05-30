@@ -4,7 +4,12 @@ class Model {
           throw new Error('Parametro obbligatorio mancante');
         }
         this.fileName = fileName;
-      }
+        this.data = [];
+    }
+  
+    read() {
+      return this.data;
+    }
   }
   
   module.exports = Model;

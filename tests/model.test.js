@@ -17,6 +17,12 @@ test('L\'istanza di model dovrebbe richiedere il parametro obbligatorio del cost
 
 
 // L'istanza di model dovrebbe avere il metodo read
+test('L\'istanza di model dovrebbe avere il metodo read', () => {
+    const model = new Model('Dario');
+    expect(model.read).toBeDefined();
+  });
+
+  
 // L'istanza di model dovrebbe avere il metodo add
 // read dovrebbe ritornare un array
 // add dovrebbe aggiungere un elemento all’array dei dati e ritornare tutta la lista
