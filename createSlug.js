@@ -1,6 +1,7 @@
 // createSlug.js
 function createSlug(title, posts) {
-    return title = "Hello World";
+  title = "Hello World";
+    return title.toLowerCase();
   }
   
   module.exports = { createSlug };
