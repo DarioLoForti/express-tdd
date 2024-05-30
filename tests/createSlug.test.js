@@ -1,4 +1,5 @@
 // Eseguiamo i seguenti test:
+const { test, expect } = require("@jest/globals");
 const createSlug = require('../createSlug.js');
 
 
