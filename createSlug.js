@@ -1,5 +1,7 @@
 function createSlug(title, posts) {
-
+if (!title || typeof title !== 'string') {
+    throw new Error('Titolo non valido');
+  }
   let slug = title.toLowerCase().split(' ').join('-');
   
   
