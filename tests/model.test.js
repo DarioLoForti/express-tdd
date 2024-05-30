@@ -34,3 +34,8 @@ test('read dovrebbe ritornare un array', () => {
     expect(model.read()).toBeInstanceOf(Array);
   });
 // add dovrebbe aggiungere un elemento all’array dei dati e ritornare tutta la lista
+test('add dovrebbe aggiungere un elemento all’array dei dati e ritornare tutta la lista', () => {
+    const model = new Model('Dario');
+    const item = 'Dario';
+    expect(model.add(item)).toContain(item);
+  });
